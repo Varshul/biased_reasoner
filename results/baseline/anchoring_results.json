@@ -1,0 +1,2012 @@
+{
+  "model_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "eval_path": "data/eval/anchoring_v1.jsonl",
+  "n_problems": 100,
+  "anchoring_slope_median": 0.050148132935648126,
+  "anchoring_slope_iqr": 0.9970300817964407,
+  "anchoring_slope_all": [
+    0.07606876261928204,
+    0.46256772228785187,
+    -1.7326883068544226e-17,
+    0.19897000433601872,
+    0.9999355855071862,
+    -0.09567501052882521,
+    0.3285951216895887,
+    -0.5005157901409432,
+    -0.0387254899964359,
+    -0.4986342760746246,
+    0.8450528104279014,
+    -0.5119229975844687,
+    -0.49999141676583786,
+    -0.4823547314285731,
+    0.32442059136079,
+    -0.45683097957403274,
+    -0.49999999999999994,
+    -0.024227503252014154,
+    1.0629363226607476,
+    0.7526491840516312,
+    0.16474121066610875,
+    0.10008742597156242,
+    0.7439478370516093,
+    0.10253135568611911,
+    0.29845500650402823,
+    -0.36928031367991554,
+    0.7130475409930955,
+    -0.10373916100391667,
+    -0.0004972058531663637,
+    -0.5019563343779891,
+    -3.960599131699554e-17,
+    0.5471254023315181,
+    0.09948500216800943,
+    0.6505149978319905,
+    -0.04707005129231773,
+    -0.2865320089195594,
+    0.607218430728922,
+    -0.5005157901409433,
+    -0.41086316912154697,
+    0.07804433910994463,
+    -0.019795311511906236,
+    -0.49804366562201074,
+    -0.5185038024463262,
+    -0.5197953115119063,
+    -0.4966067982026814,
+    -0.499235393878945,
+    0.4972511539246341,
+    -0.42742346743194815,
+    0.6683811698001088,
+    0.42474250108400463,
+    0.9987125857557573,
+    0.19562901394652335,
+    0.5277309998958031,
+    -0.4999931334669549,
+    0.4070972325125779,
+    0.6146517373762015,
+    0.24999999999999994,
+    -0.05546218740408906,
+    0.9995027941468339,
+    0.718765315847925,
+    0.4996220495990302,
+    1.117130270739436,
+    -0.06199331659045168,
+    0.7002575792517292,
+    -0.2150845016427483,
+    -0.4992486224650686,
+    -0.5017946461567809,
+    -0.5005157901409432,
+    0.2940228147639204,
+    -0.4986342760746245,
+    -0.20221412751127527,
+    0.2812346841520749,
+    -0.49999141676583786,
+    -0.5242275032520142,
+    -0.4966067982026814,
+    -0.49923539387894506,
+    0.11398298891243107,
+    -0.06825031801593447,
+    0.9937590994006154,
+    0.314909327626439,
+    0.7997425814197386,
+    -0.4883054600967292,
+    0.8772162852029292,
+    -0.9502582659289187,
+    0.4492410996590737,
+    0.6765043202949986,
+    0.614652595723367,
+    0.6598026886722096,
+    0.9995027941468339,
+    -0.3930241919876298,
+    -0.2812346841520749,
+    0.09948500216800928,
+    0.22151416192329088,
+    0.9987125857557573,
+    2.0675129561607586e-17,
+    0.024227503252014206,
+    -0.5017946461567809,
+    -0.5005157901409433,
+    0.21876531584792505,
+    -0.4986342760746246
+  ],
+  "total_parse_failures": 42,
+  "problem_results": [
+    {
+      "id": "price_001",
+      "domain": "price_estimation",
+      "item": "a new iPhone 15 Pro Max",
+      "median_estimates": {
+        "low": 1000.0,
+        "mid": 1400.0,
+        "high": 2015.0,
+        "none": 400.0
+      },
+      "anchor_values": {
+        "low": 11.958260743101398,
+        "mid": 1195.8260743101398,
+        "high": 119582.60743101398,
+        "none": null
+      },
+      "anchoring_slope": 0.07606876261928204,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_002",
+      "domain": "price_estimation",
+      "item": "a high-end gaming PC",
+      "median_estimates": {
+        "low": 2000.0,
+        "mid": 2828.0,
+        "high": 141677.5,
+        "none": 4.0
+      },
+      "anchor_values": {
+        "low": 28.284271247461902,
+        "mid": 2828.42712474619,
+        "high": 282842.71247461904,
+        "none": null
+      },
+      "anchoring_slope": 0.46256772228785187,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_003",
+      "domain": "price_estimation",
+      "item": "a 65-inch OLED TV",
+      "median_estimates": {
+        "low": 65.0,
+        "mid": 1.5,
+        "high": 65.0,
+        "none": 500.0
+      },
+      "anchor_values": {
+        "low": 17.32050807568877,
+        "mid": 1732.0508075688772,
+        "high": 173205.0807568877,
+        "none": null
+      },
+      "anchoring_slope": -1.7326883068544226e-17,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_004",
+      "domain": "price_estimation",
+      "item": "a professional DSLR camera body",
+      "median_estimates": {
+        "low": 800.0,
+        "mid": 2000.0,
+        "high": 5000.0,
+        "none": 5000.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.19897000433601872,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_005",
+      "domain": "price_estimation",
+      "item": "a MacBook Pro 16-inch",
+      "median_estimates": {
+        "low": 29.0,
+        "mid": 2500.0,
+        "high": 289828.0,
+        "none": 1000.0
+      },
+      "anchor_values": {
+        "low": 28.98275349237888,
+        "mid": 2898.275349237888,
+        "high": 289827.5349237888,
+        "none": null
+      },
+      "anchoring_slope": 0.9999355855071862,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_006",
+      "domain": "price_estimation",
+      "item": "a new Toyota Camry",
+      "median_estimates": {
+        "low": 7.0,
+        "mid": 28844.0,
+        "high": 2.9,
+        "none": 15002.0
+      },
+      "anchor_values": {
+        "low": 288.44410203711914,
+        "mid": 28844.410203711916,
+        "high": 2884441.0203711917,
+        "none": null
+      },
+      "anchoring_slope": -0.09567501052882521,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_007",
+      "domain": "price_estimation",
+      "item": "a used 2015 Honda Civic",
+      "median_estimates": {
+        "low": 97.7,
+        "mid": 12247.0,
+        "high": 2015.0,
+        "none": 2015.0
+      },
+      "anchor_values": {
+        "low": 122.4744871391589,
+        "mid": 12247.44871391589,
+        "high": 1224744.871391589,
+        "none": null
+      },
+      "anchoring_slope": 0.3285951216895887,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_008",
+      "domain": "price_estimation",
+      "item": "a luxury Tesla Model S",
+      "median_estimates": {
+        "low": 844.0,
+        "mid": 84410.0,
+        "high": 8.4,
+        "none": 125000.0
+      },
+      "anchor_values": {
+        "low": 844.0971508067066,
+        "mid": 84409.71508067066,
+        "high": 8440971.508067066,
+        "none": null
+      },
+      "anchoring_slope": -0.5005157901409432,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_009",
+      "domain": "price_estimation",
+      "item": "a Ford F-150 pickup truck",
+      "median_estimates": {
+        "low": 50000.0,
+        "mid": 40000.0,
+        "high": 35000.0,
+        "none": 35000.0
+      },
+      "anchor_values": {
+        "low": 438.7482193696061,
+        "mid": 43874.82193696061,
+        "high": 4387482.193696061,
+        "none": null
+      },
+      "anchoring_slope": -0.0387254899964359,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_010",
+      "domain": "price_estimation",
+      "item": "a Harley-Davidson motorcycle",
+      "median_estimates": {
+        "low": 158.0,
+        "mid": 15811.0,
+        "high": 1.6,
+        "none": 35000.0
+      },
+      "anchor_values": {
+        "low": 158.11388300841895,
+        "mid": 15811.388300841896,
+        "high": 1581138.8300841895,
+        "none": null
+      },
+      "anchoring_slope": -0.4986342760746246,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_011",
+      "domain": "price_estimation",
+      "item": "a studio apartment in Manhattan",
+      "median_estimates": {
+        "low": 125.0,
+        "mid": 300000.0,
+        "high": 300000.0,
+        "none": 200000.0
+      },
+      "anchor_values": {
+        "low": 5291.502622129181,
+        "mid": 529150.2622129181,
+        "high": 52915026.22129181,
+        "none": null
+      },
+      "anchoring_slope": 0.8450528104279014,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_012",
+      "domain": "price_estimation",
+      "item": "a 3-bedroom house in suburban Ohio",
+      "median_estimates": {
+        "low": 2500.0,
+        "mid": 1200.0,
+        "high": 22.4,
+        "none": 250000.0
+      },
+      "anchor_values": {
+        "low": 2244.994432064365,
+        "mid": 224499.4432064365,
+        "high": 22449944.32064365,
+        "none": null
+      },
+      "anchoring_slope": -0.5119229975844687,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_013",
+      "domain": "price_estimation",
+      "item": "a beachfront property in Miami",
+      "median_estimates": {
+        "low": 12649.0,
+        "mid": 1.3,
+        "high": 126.5,
+        "none": 500000.0
+      },
+      "anchor_values": {
+        "low": 12649.110640673516,
+        "mid": 1264911.0640673516,
+        "high": 126491106.40673517,
+        "none": null
+      },
+      "anchoring_slope": -0.49999141676583786,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_014",
+      "domain": "price_estimation",
+      "item": "a commercial office space in San Francisco",
+      "median_estimates": {
+        "low": 8500.0,
+        "mid": 60000.0,
+        "high": 100.0,
+        "none": 400.0
+      },
+      "anchor_values": {
+        "low": 10000.0,
+        "mid": 1000000.0,
+        "high": 100000000.0,
+        "none": null
+      },
+      "anchoring_slope": -0.4823547314285731,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_015",
+      "domain": "price_estimation",
+      "item": "a vintage Rolex Submariner",
+      "median_estimates": {
+        "low": 126.0,
+        "mid": 12649.0,
+        "high": 2500.65,
+        "none": 990.995
+      },
+      "anchor_values": {
+        "low": 126.49110640673518,
+        "mid": 12649.110640673518,
+        "high": 1264911.0640673519,
+        "none": null
+      },
+      "anchoring_slope": 0.32442059136079,
+      "parse_failures": 2
+    },
+    {
+      "id": "price_016",
+      "domain": "price_estimation",
+      "item": "a first-edition Harry Potter hardcover",
+      "median_estimates": {
+        "low": 383.0,
+        "mid": 56569.0,
+        "high": 5.7,
+        "none": 150.0
+      },
+      "anchor_values": {
+        "low": 565.685424949238,
+        "mid": 56568.5424949238,
+        "high": 5656854.24949238,
+        "none": null
+      },
+      "anchoring_slope": -0.45683097957403274,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_017",
+      "domain": "price_estimation",
+      "item": "a 1952 Mickey Mantle baseball card (PSA 9)",
+      "median_estimates": {
+        "low": 77460.0,
+        "mid": 9.0,
+        "high": 774.6,
+        "none": 10.0
+      },
+      "anchor_values": {
+        "low": 77459.66692414835,
+        "mid": 7745966.692414834,
+        "high": 774596669.2414834,
+        "none": null
+      },
+      "anchoring_slope": -0.49999999999999994,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_018",
+      "domain": "price_estimation",
+      "item": "a signed Banksy print",
+      "median_estimates": {
+        "low": 2.0,
+        "mid": 15811.0,
+        "high": 1.6,
+        "none": 14.5
+      },
+      "anchor_values": {
+        "low": 158.11388300841895,
+        "mid": 15811.388300841896,
+        "high": 1581138.8300841895,
+        "none": null
+      },
+      "anchoring_slope": -0.024227503252014154,
+      "parse_failures": 2
+    },
+    {
+      "id": "price_019",
+      "domain": "price_estimation",
+      "item": "a Louis Vuitton Speedy handbag",
+      "median_estimates": {
+        "low": 400.0,
+        "mid": 3414.0,
+        "high": 7141760.5,
+        "none": 200.0
+      },
+      "anchor_values": {
+        "low": 14.142135623730951,
+        "mid": 1414.213562373095,
+        "high": 141421.35623730952,
+        "none": null
+      },
+      "anchoring_slope": 1.0629363226607476,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_020",
+      "domain": "price_estimation",
+      "item": "a root canal at a US dentist",
+      "median_estimates": {
+        "low": 100.0,
+        "mid": 1025.0,
+        "high": 102470.0,
+        "none": 7.0
+      },
+      "anchor_values": {
+        "low": 10.246950765959598,
+        "mid": 1024.6950765959598,
+        "high": 102469.50765959598,
+        "none": null
+      },
+      "anchoring_slope": 0.7526491840516312,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_021",
+      "domain": "price_estimation",
+      "item": "a business-class transatlantic flight",
+      "median_estimates": {
+        "low": 50.0,
+        "mid": 3162.0,
+        "high": 228.0,
+        "none": 350.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.16474121066610875,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_022",
+      "domain": "price_estimation",
+      "item": "a one-hour session with a Manhattan therapist",
+      "median_estimates": {
+        "low": 11251.0,
+        "mid": 4.0,
+        "high": 28284.0,
+        "none": 10.0
+      },
+      "anchor_values": {
+        "low": 2.8284271247461903,
+        "mid": 282.842712474619,
+        "high": 28284.271247461904,
+        "none": null
+      },
+      "anchoring_slope": 0.10008742597156242,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_023",
+      "domain": "price_estimation",
+      "item": "a wedding photographer for a full day",
+      "median_estimates": {
+        "low": 409.5,
+        "mid": 3873.0,
+        "high": 387298.0,
+        "none": 7.0
+      },
+      "anchor_values": {
+        "low": 38.72983346207417,
+        "mid": 3872.983346207417,
+        "high": 387298.3346207417,
+        "none": null
+      },
+      "anchoring_slope": 0.7439478370516093,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_024",
+      "domain": "price_estimation",
+      "item": "a 30-second Super Bowl ad slot",
+      "median_estimates": {
+        "low": 246.0,
+        "mid": 6.3,
+        "high": 632.5,
+        "none": 100.0
+      },
+      "anchor_values": {
+        "low": 63245.55320336759,
+        "mid": 6324555.320336759,
+        "high": 632455532.0336759,
+        "none": null
+      },
+      "anchoring_slope": 0.10253135568611911,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_025",
+      "domain": "price_estimation",
+      "item": "a bottle of 2005 Petrus Bordeaux",
+      "median_estimates": {
+        "low": 32.0,
+        "mid": 2500.0,
+        "high": 500.0,
+        "none": 50.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.29845500650402823,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_026",
+      "domain": "price_estimation",
+      "item": "a 1 kg black truffle",
+      "median_estimates": {
+        "low": 30.0,
+        "mid": 1265.0,
+        "high": 1.0,
+        "none": 12.0
+      },
+      "anchor_values": {
+        "low": 12.649110640673518,
+        "mid": 1264.9110640673518,
+        "high": 126491.10640673518,
+        "none": null
+      },
+      "anchoring_slope": -0.36928031367991554,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_027",
+      "domain": "price_estimation",
+      "item": "a Kobe beef steak at a top steakhouse",
+      "median_estimates": {
+        "low": 40.0,
+        "mid": 316.0,
+        "high": 28461.0,
+        "none": 60.0
+      },
+      "anchor_values": {
+        "low": 3.1622776601683795,
+        "mid": 316.22776601683796,
+        "high": 31622.776601683796,
+        "none": null
+      },
+      "anchoring_slope": 0.7130475409930955,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_028",
+      "domain": "price_estimation",
+      "item": "a pound of specialty coffee beans",
+      "median_estimates": {
+        "low": 129.995,
+        "mid": 40.0,
+        "high": 50.0,
+        "none": 25.0
+      },
+      "anchor_values": {
+        "low": 0.3464101615137755,
+        "mid": 34.64101615137755,
+        "high": 3464.101615137755,
+        "none": null
+      },
+      "anchoring_slope": -0.10373916100391667,
+      "parse_failures": 2
+    },
+    {
+      "id": "price_029",
+      "domain": "price_estimation",
+      "item": "a commercial espresso machine for a cafe",
+      "median_estimates": {
+        "low": 87.0,
+        "mid": 8660.0,
+        "high": 86.6025,
+        "none": 4.0
+      },
+      "anchor_values": {
+        "low": 86.60254037844386,
+        "mid": 8660.254037844386,
+        "high": 866025.4037844386,
+        "none": null
+      },
+      "anchoring_slope": -0.0004972058531663637,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_030",
+      "domain": "price_estimation",
+      "item": "a CNC milling machine for a workshop",
+      "median_estimates": {
+        "low": 224.0,
+        "mid": 6.0,
+        "high": 2.2,
+        "none": 25002.5
+      },
+      "anchor_values": {
+        "low": 223.60679774997897,
+        "mid": 22360.679774997898,
+        "high": 2236067.9774997896,
+        "none": null
+      },
+      "anchoring_slope": -0.5019563343779891,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_031",
+      "domain": "price_estimation",
+      "item": "a new iPhone 15 Pro Max",
+      "median_estimates": {
+        "low": 15.0,
+        "mid": 1196.0,
+        "high": 15.0,
+        "none": 1500.0
+      },
+      "anchor_values": {
+        "low": 11.958260743101398,
+        "mid": 1195.8260743101398,
+        "high": 119582.60743101398,
+        "none": null
+      },
+      "anchoring_slope": -3.960599131699554e-17,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_032",
+      "domain": "price_estimation",
+      "item": "a high-end gaming PC",
+      "median_estimates": {
+        "low": 28.0,
+        "mid": 2828.0,
+        "high": 4321.75,
+        "none": 3000.0
+      },
+      "anchor_values": {
+        "low": 28.284271247461902,
+        "mid": 2828.42712474619,
+        "high": 282842.71247461904,
+        "none": null
+      },
+      "anchoring_slope": 0.5471254023315181,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_033",
+      "domain": "price_estimation",
+      "item": "a 65-inch OLED TV",
+      "median_estimates": {
+        "low": 200.0,
+        "mid": 600.0,
+        "high": 500.0,
+        "none": 3080.0
+      },
+      "anchor_values": {
+        "low": 17.32050807568877,
+        "mid": 1732.0508075688772,
+        "high": 173205.0807568877,
+        "none": null
+      },
+      "anchoring_slope": 0.09948500216800943,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_034",
+      "domain": "price_estimation",
+      "item": "a professional DSLR camera body",
+      "median_estimates": {
+        "low": 5.0,
+        "mid": 3162.0,
+        "high": 2000.0,
+        "none": 2000.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.6505149978319905,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_035",
+      "domain": "price_estimation",
+      "item": "a MacBook Pro 16-inch",
+      "median_estimates": {
+        "low": 2999.0,
+        "mid": 1550.0,
+        "high": 1944.0,
+        "none": 1450.0
+      },
+      "anchor_values": {
+        "low": 28.98275349237888,
+        "mid": 2898.275349237888,
+        "high": 289827.5349237888,
+        "none": null
+      },
+      "anchoring_slope": -0.04707005129231773,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_036",
+      "domain": "price_estimation",
+      "item": "a new Toyota Camry",
+      "median_estimates": {
+        "low": 350.0,
+        "mid": 28844.0,
+        "high": 25.0,
+        "none": 30.0
+      },
+      "anchor_values": {
+        "low": 288.44410203711914,
+        "mid": 28844.410203711916,
+        "high": 2884441.0203711917,
+        "none": null
+      },
+      "anchoring_slope": -0.2865320089195594,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_037",
+      "domain": "price_estimation",
+      "item": "a used 2015 Honda Civic",
+      "median_estimates": {
+        "low": 149.0,
+        "mid": 12247.0,
+        "high": 40000.0,
+        "none": 2750.0
+      },
+      "anchor_values": {
+        "low": 122.4744871391589,
+        "mid": 12247.44871391589,
+        "high": 1224744.871391589,
+        "none": null
+      },
+      "anchoring_slope": 0.607218430728922,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_038",
+      "domain": "price_estimation",
+      "item": "a luxury Tesla Model S",
+      "median_estimates": {
+        "low": 844.0,
+        "mid": 2000.0,
+        "high": 8.4,
+        "none": 100000.0
+      },
+      "anchor_values": {
+        "low": 844.0971508067066,
+        "mid": 84409.71508067066,
+        "high": 8440971.508067066,
+        "none": null
+      },
+      "anchoring_slope": -0.5005157901409433,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_039",
+      "domain": "price_estimation",
+      "item": "a Ford F-150 pickup truck",
+      "median_estimates": {
+        "low": 22000.0,
+        "mid": 150.0,
+        "high": 500.0,
+        "none": 20000.0
+      },
+      "anchor_values": {
+        "low": 438.7482193696061,
+        "mid": 43874.82193696061,
+        "high": 4387482.193696061,
+        "none": null
+      },
+      "anchoring_slope": -0.41086316912154697,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_040",
+      "domain": "price_estimation",
+      "item": "a Harley-Davidson motorcycle",
+      "median_estimates": {
+        "low": 15.0,
+        "mid": 15811.0,
+        "high": 30.78,
+        "none": 3000.0
+      },
+      "anchor_values": {
+        "low": 158.11388300841895,
+        "mid": 15811.388300841896,
+        "high": 1581138.8300841895,
+        "none": null
+      },
+      "anchoring_slope": 0.07804433910994463,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_041",
+      "domain": "price_estimation",
+      "item": "a studio apartment in Manhattan",
+      "median_estimates": {
+        "low": 6000.0,
+        "mid": 1750.0,
+        "high": 5000.0,
+        "none": 5.0
+      },
+      "anchor_values": {
+        "low": 5291.502622129181,
+        "mid": 529150.2622129181,
+        "high": 52915026.22129181,
+        "none": null
+      },
+      "anchoring_slope": -0.019795311511906236,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_042",
+      "domain": "price_estimation",
+      "item": "a 3-bedroom house in suburban Ohio",
+      "median_estimates": {
+        "low": 2200.0,
+        "mid": 224499.0,
+        "high": 22.4,
+        "none": 200000.0
+      },
+      "anchor_values": {
+        "low": 2244.994432064365,
+        "mid": 224499.4432064365,
+        "high": 22449944.32064365,
+        "none": null
+      },
+      "anchoring_slope": -0.49804366562201074,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_043",
+      "domain": "price_estimation",
+      "item": "a beachfront property in Miami",
+      "median_estimates": {
+        "low": 15000.5,
+        "mid": 1.3,
+        "high": 126.5,
+        "none": 150000.0
+      },
+      "anchor_values": {
+        "low": 12649.110640673516,
+        "mid": 1264911.0640673516,
+        "high": 126491106.40673517,
+        "none": null
+      },
+      "anchoring_slope": -0.5185038024463262,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_044",
+      "domain": "price_estimation",
+      "item": "a commercial office space in San Francisco",
+      "median_estimates": {
+        "low": 12000.0,
+        "mid": 10.0,
+        "high": 100.0,
+        "none": 60000.0
+      },
+      "anchor_values": {
+        "low": 10000.0,
+        "mid": 1000000.0,
+        "high": 100000000.0,
+        "none": null
+      },
+      "anchoring_slope": -0.5197953115119063,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_045",
+      "domain": "price_estimation",
+      "item": "a vintage Rolex Submariner",
+      "median_estimates": {
+        "low": 126.0,
+        "mid": 12649.0,
+        "high": 1.3,
+        "none": 4.0
+      },
+      "anchor_values": {
+        "low": 126.49110640673518,
+        "mid": 12649.110640673518,
+        "high": 1264911.0640673519,
+        "none": null
+      },
+      "anchoring_slope": -0.4966067982026814,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_046",
+      "domain": "price_estimation",
+      "item": "a first-edition Harry Potter hardcover",
+      "median_estimates": {
+        "low": 566.0,
+        "mid": 56569.0,
+        "high": 5.7,
+        "none": 50.0
+      },
+      "anchor_values": {
+        "low": 565.685424949238,
+        "mid": 56568.5424949238,
+        "high": 5656854.24949238,
+        "none": null
+      },
+      "anchoring_slope": -0.499235393878945,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_047",
+      "domain": "price_estimation",
+      "item": "a 1952 Mickey Mantle baseball card (PSA 9)",
+      "median_estimates": {
+        "low": 20.0,
+        "mid": 1950.0,
+        "high": 1950.0,
+        "none": 5.395
+      },
+      "anchor_values": {
+        "low": 77459.66692414835,
+        "mid": 7745966.692414834,
+        "high": 774596669.2414834,
+        "none": null
+      },
+      "anchoring_slope": 0.4972511539246341,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_048",
+      "domain": "price_estimation",
+      "item": "a signed Banksy print",
+      "median_estimates": {
+        "low": 82.0,
+        "mid": 15811.0,
+        "high": 1.6,
+        "none": 527.5
+      },
+      "anchor_values": {
+        "low": 158.11388300841895,
+        "mid": 15811.388300841896,
+        "high": 1581138.8300841895,
+        "none": null
+      },
+      "anchoring_slope": -0.42742346743194815,
+      "parse_failures": 2
+    },
+    {
+      "id": "price_049",
+      "domain": "price_estimation",
+      "item": "a Louis Vuitton Speedy handbag",
+      "median_estimates": {
+        "low": 300.0,
+        "mid": 1000.65,
+        "high": 141464.0,
+        "none": 500.0
+      },
+      "anchor_values": {
+        "low": 14.142135623730951,
+        "mid": 1414.213562373095,
+        "high": 141421.35623730952,
+        "none": null
+      },
+      "anchoring_slope": 0.6683811698001088,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_050",
+      "domain": "price_estimation",
+      "item": "a root canal at a US dentist",
+      "median_estimates": {
+        "low": 10.0,
+        "mid": 2000.0,
+        "high": 500.0,
+        "none": 252.0
+      },
+      "anchor_values": {
+        "low": 10.246950765959598,
+        "mid": 1024.6950765959598,
+        "high": 102469.50765959598,
+        "none": null
+      },
+      "anchoring_slope": 0.42474250108400463,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_051",
+      "domain": "price_estimation",
+      "item": "a business-class transatlantic flight",
+      "median_estimates": {
+        "low": 32.0,
+        "mid": 300.0,
+        "high": 316228.0,
+        "none": 300.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.9987125857557573,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_052",
+      "domain": "price_estimation",
+      "item": "a one-hour session with a Manhattan therapist",
+      "median_estimates": {
+        "low": 16.5,
+        "mid": 100.0,
+        "high": 100.0,
+        "none": 4.0
+      },
+      "anchor_values": {
+        "low": 2.8284271247461903,
+        "mid": 282.842712474619,
+        "high": 28284.271247461904,
+        "none": null
+      },
+      "anchoring_slope": 0.19562901394652335,
+      "parse_failures": 3
+    },
+    {
+      "id": "price_053",
+      "domain": "price_estimation",
+      "item": "a wedding photographer for a full day",
+      "median_estimates": {
+        "low": 3000.0,
+        "mid": 3873.0,
+        "high": 387298.0,
+        "none": 6.0
+      },
+      "anchor_values": {
+        "low": 38.72983346207417,
+        "mid": 3872.983346207417,
+        "high": 387298.3346207417,
+        "none": null
+      },
+      "anchoring_slope": 0.5277309998958031,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_054",
+      "domain": "price_estimation",
+      "item": "a 30-second Super Bowl ad slot",
+      "median_estimates": {
+        "low": 63246.0,
+        "mid": 30.0,
+        "high": 632.5,
+        "none": 4.0
+      },
+      "anchor_values": {
+        "low": 63245.55320336759,
+        "mid": 6324555.320336759,
+        "high": 632455532.0336759,
+        "none": null
+      },
+      "anchoring_slope": -0.4999931334669549,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_055",
+      "domain": "price_estimation",
+      "item": "a bottle of 2005 Petrus Bordeaux",
+      "median_estimates": {
+        "low": 6.0,
+        "mid": 3162.0,
+        "high": 255.0,
+        "none": 20.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.4070972325125779,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_056",
+      "domain": "price_estimation",
+      "item": "a 1 kg black truffle",
+      "median_estimates": {
+        "low": 44.0,
+        "mid": 1400.0,
+        "high": 12649.1,
+        "none": 200.0
+      },
+      "anchor_values": {
+        "low": 12.649110640673518,
+        "mid": 1264.9110640673518,
+        "high": 126491.10640673518,
+        "none": null
+      },
+      "anchoring_slope": 0.6146517373762015,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_057",
+      "domain": "price_estimation",
+      "item": "a Kobe beef steak at a top steakhouse",
+      "median_estimates": {
+        "low": 20.0,
+        "mid": 316.0,
+        "high": 200.0,
+        "none": 6.0
+      },
+      "anchor_values": {
+        "low": 3.1622776601683795,
+        "mid": 316.22776601683796,
+        "high": 31622.776601683796,
+        "none": null
+      },
+      "anchoring_slope": 0.24999999999999994,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_058",
+      "domain": "price_estimation",
+      "item": "a pound of specialty coffee beans",
+      "median_estimates": {
+        "low": 20.0,
+        "mid": 4.0,
+        "high": 12.0,
+        "none": 6.0
+      },
+      "anchor_values": {
+        "low": 0.3464101615137755,
+        "mid": 34.64101615137755,
+        "high": 3464.101615137755,
+        "none": null
+      },
+      "anchoring_slope": -0.05546218740408906,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_059",
+      "domain": "price_estimation",
+      "item": "a commercial espresso machine for a cafe",
+      "median_estimates": {
+        "low": 87.0,
+        "mid": 8660.0,
+        "high": 866025.0,
+        "none": 500.0
+      },
+      "anchor_values": {
+        "low": 86.60254037844386,
+        "mid": 8660.254037844386,
+        "high": 866025.4037844386,
+        "none": null
+      },
+      "anchoring_slope": 0.9995027941468339,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_060",
+      "domain": "price_estimation",
+      "item": "a CNC milling machine for a workshop",
+      "median_estimates": {
+        "low": 4.0,
+        "mid": 22361.0,
+        "high": 3000.0,
+        "none": 50000.0
+      },
+      "anchor_values": {
+        "low": 223.60679774997897,
+        "mid": 22360.679774997898,
+        "high": 2236067.9774997896,
+        "none": null
+      },
+      "anchoring_slope": 0.718765315847925,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_061",
+      "domain": "price_estimation",
+      "item": "a new iPhone 15 Pro Max",
+      "median_estimates": {
+        "low": 1200.0,
+        "mid": 1196.0,
+        "high": 119583.0,
+        "none": 1500.0
+      },
+      "anchor_values": {
+        "low": 11.958260743101398,
+        "mid": 1195.8260743101398,
+        "high": 119582.60743101398,
+        "none": null
+      },
+      "anchoring_slope": 0.4996220495990302,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_062",
+      "domain": "price_estimation",
+      "item": "a high-end gaming PC",
+      "median_estimates": {
+        "low": 10.2,
+        "mid": 2828.0,
+        "high": 300000.0,
+        "none": 6.0
+      },
+      "anchor_values": {
+        "low": 28.284271247461902,
+        "mid": 2828.42712474619,
+        "high": 282842.71247461904,
+        "none": null
+      },
+      "anchoring_slope": 1.117130270739436,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_063",
+      "domain": "price_estimation",
+      "item": "a 65-inch OLED TV",
+      "median_estimates": {
+        "low": 17.7,
+        "mid": 3000.0,
+        "high": 10.0,
+        "none": 65.0
+      },
+      "anchor_values": {
+        "low": 17.32050807568877,
+        "mid": 1732.0508075688772,
+        "high": 173205.0807568877,
+        "none": null
+      },
+      "anchoring_slope": -0.06199331659045168,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_064",
+      "domain": "price_estimation",
+      "item": "a professional DSLR camera body",
+      "median_estimates": {
+        "low": 500.0,
+        "mid": 3831.0,
+        "high": 316228.0,
+        "none": 700.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.7002575792517292,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_065",
+      "domain": "price_estimation",
+      "item": "a MacBook Pro 16-inch",
+      "median_estimates": {
+        "low": 29.0,
+        "mid": 2898.0,
+        "high": 4.0,
+        "none": 1300.0
+      },
+      "anchor_values": {
+        "low": 28.98275349237888,
+        "mid": 2898.275349237888,
+        "high": 289827.5349237888,
+        "none": null
+      },
+      "anchoring_slope": -0.2150845016427483,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_066",
+      "domain": "price_estimation",
+      "item": "a new Toyota Camry",
+      "median_estimates": {
+        "low": 288.0,
+        "mid": 28844.0,
+        "high": 2.9,
+        "none": 32000.0
+      },
+      "anchor_values": {
+        "low": 288.44410203711914,
+        "mid": 28844.410203711916,
+        "high": 2884441.0203711917,
+        "none": null
+      },
+      "anchoring_slope": -0.4992486224650686,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_067",
+      "domain": "price_estimation",
+      "item": "a used 2015 Honda Civic",
+      "median_estimates": {
+        "low": 122.0,
+        "mid": 12000.0,
+        "high": 1.2,
+        "none": 20000.0
+      },
+      "anchor_values": {
+        "low": 122.4744871391589,
+        "mid": 12247.44871391589,
+        "high": 1224744.871391589,
+        "none": null
+      },
+      "anchoring_slope": -0.5017946461567809,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_068",
+      "domain": "price_estimation",
+      "item": "a luxury Tesla Model S",
+      "median_estimates": {
+        "low": 844.0,
+        "mid": 80000.0,
+        "high": 8.4,
+        "none": 30000.0
+      },
+      "anchor_values": {
+        "low": 844.0971508067066,
+        "mid": 84409.71508067066,
+        "high": 8440971.508067066,
+        "none": null
+      },
+      "anchoring_slope": -0.5005157901409432,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_069",
+      "domain": "price_estimation",
+      "item": "a Ford F-150 pickup truck",
+      "median_estimates": {
+        "low": 2000.0,
+        "mid": 40000.0,
+        "high": 30000.0,
+        "none": 150.0
+      },
+      "anchor_values": {
+        "low": 438.7482193696061,
+        "mid": 43874.82193696061,
+        "high": 4387482.193696061,
+        "none": null
+      },
+      "anchoring_slope": 0.2940228147639204,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_070",
+      "domain": "price_estimation",
+      "item": "a Harley-Davidson motorcycle",
+      "median_estimates": {
+        "low": 158.0,
+        "mid": 15.0,
+        "high": 1.6,
+        "none": 500.0
+      },
+      "anchor_values": {
+        "low": 158.11388300841895,
+        "mid": 15811.388300841896,
+        "high": 1581138.8300841895,
+        "none": null
+      },
+      "anchoring_slope": -0.4986342760746245,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_071",
+      "domain": "price_estimation",
+      "item": "a studio apartment in Manhattan",
+      "median_estimates": {
+        "low": 5000.0,
+        "mid": 2500.0,
+        "high": 776.45,
+        "none": 300.0
+      },
+      "anchor_values": {
+        "low": 5291.502622129181,
+        "mid": 529150.2622129181,
+        "high": 52915026.22129181,
+        "none": null
+      },
+      "anchoring_slope": -0.20221412751127527,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_072",
+      "domain": "price_estimation",
+      "item": "a 3-bedroom house in suburban Ohio",
+      "median_estimates": {
+        "low": 3.0,
+        "mid": 499.0,
+        "high": 40.0,
+        "none": 150000.0
+      },
+      "anchor_values": {
+        "low": 2244.994432064365,
+        "mid": 224499.4432064365,
+        "high": 22449944.32064365,
+        "none": null
+      },
+      "anchoring_slope": 0.2812346841520749,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_073",
+      "domain": "price_estimation",
+      "item": "a beachfront property in Miami",
+      "median_estimates": {
+        "low": 12649.0,
+        "mid": 130.0,
+        "high": 126.5,
+        "none": 350000.0
+      },
+      "anchor_values": {
+        "low": 12649.110640673516,
+        "mid": 1264911.0640673516,
+        "high": 126491106.40673517,
+        "none": null
+      },
+      "anchoring_slope": -0.49999141676583786,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_074",
+      "domain": "price_estimation",
+      "item": "a commercial office space in San Francisco",
+      "median_estimates": {
+        "low": 10000.0,
+        "mid": 4.0,
+        "high": 80.0,
+        "none": 200000.0
+      },
+      "anchor_values": {
+        "low": 10000.0,
+        "mid": 1000000.0,
+        "high": 100000000.0,
+        "none": null
+      },
+      "anchoring_slope": -0.5242275032520142,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_075",
+      "domain": "price_estimation",
+      "item": "a vintage Rolex Submariner",
+      "median_estimates": {
+        "low": 126.0,
+        "mid": 10000.0,
+        "high": 1.3,
+        "none": 500000.0
+      },
+      "anchor_values": {
+        "low": 126.49110640673518,
+        "mid": 12649.110640673518,
+        "high": 1264911.0640673519,
+        "none": null
+      },
+      "anchoring_slope": -0.4966067982026814,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_076",
+      "domain": "price_estimation",
+      "item": "a first-edition Harry Potter hardcover",
+      "median_estimates": {
+        "low": 566.0,
+        "mid": 59.0,
+        "high": 5.7,
+        "none": 30.0
+      },
+      "anchor_values": {
+        "low": 565.685424949238,
+        "mid": 56568.5424949238,
+        "high": 5656854.24949238,
+        "none": null
+      },
+      "anchoring_slope": -0.49923539387894506,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_077",
+      "domain": "price_estimation",
+      "item": "a 1952 Mickey Mantle baseball card (PSA 9)",
+      "median_estimates": {
+        "low": 7.0,
+        "mid": 7.7,
+        "high": 20.0,
+        "none": 19.0
+      },
+      "anchor_values": {
+        "low": 77459.66692414835,
+        "mid": 7745966.692414834,
+        "high": 774596669.2414834,
+        "none": null
+      },
+      "anchoring_slope": 0.11398298891243107,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_078",
+      "domain": "price_estimation",
+      "item": "a signed Banksy print",
+      "median_estimates": {
+        "low": 3.0,
+        "mid": 20000.0,
+        "high": 1.6,
+        "none": 50.0
+      },
+      "anchor_values": {
+        "low": 158.11388300841895,
+        "mid": 15811.388300841896,
+        "high": 1581138.8300841895,
+        "none": null
+      },
+      "anchoring_slope": -0.06825031801593447,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_079",
+      "domain": "price_estimation",
+      "item": "a Louis Vuitton Speedy handbag",
+      "median_estimates": {
+        "low": 7.5,
+        "mid": 1414.0,
+        "high": 70810.5,
+        "none": 300.0
+      },
+      "anchor_values": {
+        "low": 14.142135623730951,
+        "mid": 1414.213562373095,
+        "high": 141421.35623730952,
+        "none": null
+      },
+      "anchoring_slope": 0.9937590994006154,
+      "parse_failures": 2
+    },
+    {
+      "id": "price_080",
+      "domain": "price_estimation",
+      "item": "a root canal at a US dentist",
+      "median_estimates": {
+        "low": 55.0,
+        "mid": 1025.0,
+        "high": 1000.0,
+        "none": 100.0
+      },
+      "anchor_values": {
+        "low": 10.246950765959598,
+        "mid": 1024.6950765959598,
+        "high": 102469.50765959598,
+        "none": null
+      },
+      "anchoring_slope": 0.314909327626439,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_081",
+      "domain": "price_estimation",
+      "item": "a business-class transatlantic flight",
+      "median_estimates": {
+        "low": 200.0,
+        "mid": 3162.0,
+        "high": 316228.0,
+        "none": 160.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.7997425814197386,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_082",
+      "domain": "price_estimation",
+      "item": "a one-hour session with a Manhattan therapist",
+      "median_estimates": {
+        "low": 25500.0,
+        "mid": 283.0,
+        "high": 284.0,
+        "none": 150.0
+      },
+      "anchor_values": {
+        "low": 2.8284271247461903,
+        "mid": 282.842712474619,
+        "high": 28284.271247461904,
+        "none": null
+      },
+      "anchoring_slope": -0.4883054600967292,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_083",
+      "domain": "price_estimation",
+      "item": "a wedding photographer for a full day",
+      "median_estimates": {
+        "low": 40.0,
+        "mid": 3873.0,
+        "high": 129099.67,
+        "none": 400.0
+      },
+      "anchor_values": {
+        "low": 38.72983346207417,
+        "mid": 3872.983346207417,
+        "high": 387298.3346207417,
+        "none": null
+      },
+      "anchoring_slope": 0.8772162852029292,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_084",
+      "domain": "price_estimation",
+      "item": "a 30-second Super Bowl ad slot",
+      "median_estimates": {
+        "low": 63246.0,
+        "mid": 6.3,
+        "high": 10.0,
+        "none": 30.0
+      },
+      "anchor_values": {
+        "low": 63245.55320336759,
+        "mid": 6324555.320336759,
+        "high": 632455532.0336759,
+        "none": null
+      },
+      "anchoring_slope": -0.9502582659289187,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_085",
+      "domain": "price_estimation",
+      "item": "a bottle of 2005 Petrus Bordeaux",
+      "median_estimates": {
+        "low": 32.0,
+        "mid": 3162.0,
+        "high": 2005.0,
+        "none": 60.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.4492410996590737,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_086",
+      "domain": "price_estimation",
+      "item": "a 1 kg black truffle",
+      "median_estimates": {
+        "low": 248.91,
+        "mid": 1265.0,
+        "high": 126491.0,
+        "none": 200.0
+      },
+      "anchor_values": {
+        "low": 12.649110640673518,
+        "mid": 1264.9110640673518,
+        "high": 126491.10640673518,
+        "none": null
+      },
+      "anchoring_slope": 0.6765043202949986,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_087",
+      "domain": "price_estimation",
+      "item": "a Kobe beef steak at a top steakhouse",
+      "median_estimates": {
+        "low": 110.0,
+        "mid": 100.0,
+        "high": 31623.0,
+        "none": 1500.0
+      },
+      "anchor_values": {
+        "low": 3.1622776601683795,
+        "mid": 316.22776601683796,
+        "high": 31622.776601683796,
+        "none": null
+      },
+      "anchoring_slope": 0.614652595723367,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_088",
+      "domain": "price_estimation",
+      "item": "a pound of specialty coffee beans",
+      "median_estimates": {
+        "low": 7.95,
+        "mid": 35.0,
+        "high": 3464.0,
+        "none": 15.0
+      },
+      "anchor_values": {
+        "low": 0.3464101615137755,
+        "mid": 34.64101615137755,
+        "high": 3464.101615137755,
+        "none": null
+      },
+      "anchoring_slope": 0.6598026886722096,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_089",
+      "domain": "price_estimation",
+      "item": "a commercial espresso machine for a cafe",
+      "median_estimates": {
+        "low": 87.0,
+        "mid": 8660.0,
+        "high": 866025.0,
+        "none": 8.0
+      },
+      "anchor_values": {
+        "low": 86.60254037844386,
+        "mid": 8660.254037844386,
+        "high": 866025.4037844386,
+        "none": null
+      },
+      "anchoring_slope": 0.9995027941468339,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_090",
+      "domain": "price_estimation",
+      "item": "a CNC milling machine for a workshop",
+      "median_estimates": {
+        "low": 224.0,
+        "mid": 200.0,
+        "high": 6.0,
+        "none": 15500.0
+      },
+      "anchor_values": {
+        "low": 223.60679774997897,
+        "mid": 22360.679774997898,
+        "high": 2236067.9774997896,
+        "none": null
+      },
+      "anchoring_slope": -0.3930241919876298,
+      "parse_failures": 1
+    },
+    {
+      "id": "price_091",
+      "domain": "price_estimation",
+      "item": "a new iPhone 15 Pro Max",
+      "median_estimates": {
+        "low": 200.0,
+        "mid": 1196.0,
+        "high": 15.0,
+        "none": 2000.0
+      },
+      "anchor_values": {
+        "low": 11.958260743101398,
+        "mid": 1195.8260743101398,
+        "high": 119582.60743101398,
+        "none": null
+      },
+      "anchoring_slope": -0.2812346841520749,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_092",
+      "domain": "price_estimation",
+      "item": "a high-end gaming PC",
+      "median_estimates": {
+        "low": 2000.0,
+        "mid": 2828.0,
+        "high": 5000.0,
+        "none": 2000.0
+      },
+      "anchor_values": {
+        "low": 28.284271247461902,
+        "mid": 2828.42712474619,
+        "high": 282842.71247461904,
+        "none": null
+      },
+      "anchoring_slope": 0.09948500216800928,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_093",
+      "domain": "price_estimation",
+      "item": "a 65-inch OLED TV",
+      "median_estimates": {
+        "low": 65.0,
+        "mid": 128.0,
+        "high": 500.0,
+        "none": 600.0
+      },
+      "anchor_values": {
+        "low": 17.32050807568877,
+        "mid": 1732.0508075688772,
+        "high": 173205.0807568877,
+        "none": null
+      },
+      "anchoring_slope": 0.22151416192329088,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_094",
+      "domain": "price_estimation",
+      "item": "a professional DSLR camera body",
+      "median_estimates": {
+        "low": 32.0,
+        "mid": 3162.0,
+        "high": 316228.0,
+        "none": 300.0
+      },
+      "anchor_values": {
+        "low": 31.622776601683796,
+        "mid": 3162.2776601683795,
+        "high": 316227.76601683797,
+        "none": null
+      },
+      "anchoring_slope": 0.9987125857557573,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_095",
+      "domain": "price_estimation",
+      "item": "a MacBook Pro 16-inch",
+      "median_estimates": {
+        "low": 300.0,
+        "mid": 2898.0,
+        "high": 300.0,
+        "none": 2000.0
+      },
+      "anchor_values": {
+        "low": 28.98275349237888,
+        "mid": 2898.275349237888,
+        "high": 289827.5349237888,
+        "none": null
+      },
+      "anchoring_slope": 2.0675129561607586e-17,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_096",
+      "domain": "price_estimation",
+      "item": "a new Toyota Camry",
+      "median_estimates": {
+        "low": 40000.0,
+        "mid": 5.0,
+        "high": 50000.0,
+        "none": 37500.0
+      },
+      "anchor_values": {
+        "low": 288.44410203711914,
+        "mid": 28844.410203711916,
+        "high": 2884441.0203711917,
+        "none": null
+      },
+      "anchoring_slope": 0.024227503252014206,
+      "parse_failures": 2
+    },
+    {
+      "id": "price_097",
+      "domain": "price_estimation",
+      "item": "a used 2015 Honda Civic",
+      "median_estimates": {
+        "low": 122.0,
+        "mid": 15000.0,
+        "high": 1.2,
+        "none": 2015.0
+      },
+      "anchor_values": {
+        "low": 122.4744871391589,
+        "mid": 12247.44871391589,
+        "high": 1224744.871391589,
+        "none": null
+      },
+      "anchoring_slope": -0.5017946461567809,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_098",
+      "domain": "price_estimation",
+      "item": "a luxury Tesla Model S",
+      "median_estimates": {
+        "low": 844.0,
+        "mid": 84000.0,
+        "high": 8.4,
+        "none": 300.0
+      },
+      "anchor_values": {
+        "low": 844.0971508067066,
+        "mid": 84409.71508067066,
+        "high": 8440971.508067066,
+        "none": null
+      },
+      "anchoring_slope": -0.5005157901409433,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_099",
+      "domain": "price_estimation",
+      "item": "a Ford F-150 pickup truck",
+      "median_estimates": {
+        "low": 2000.0,
+        "mid": 250000.0,
+        "high": 15000.0,
+        "none": 20000.0
+      },
+      "anchor_values": {
+        "low": 438.7482193696061,
+        "mid": 43874.82193696061,
+        "high": 4387482.193696061,
+        "none": null
+      },
+      "anchoring_slope": 0.21876531584792505,
+      "parse_failures": 0
+    },
+    {
+      "id": "price_100",
+      "domain": "price_estimation",
+      "item": "a Harley-Davidson motorcycle",
+      "median_estimates": {
+        "low": 158.0,
+        "mid": 7906.0,
+        "high": 1.6,
+        "none": 1700.0
+      },
+      "anchor_values": {
+        "low": 158.11388300841895,
+        "mid": 15811.388300841896,
+        "high": 1581138.8300841895,
+        "none": null
+      },
+      "anchoring_slope": -0.4986342760746246,
+      "parse_failures": 1
+    }
+  ]
+}

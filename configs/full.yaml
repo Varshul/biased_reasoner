@@ -1,0 +1,82 @@
+# Full-scale configuration — only start after MVP succeeds
+# Differences from MVP: larger model, more data, longer training
+
+model:
+  name: "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+  load_in_4bit: false
+  torch_dtype: "bfloat16"
+
+lora:
+  r: 32
+  alpha: 64
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+  dropout: 0.05
+
+data:
+  eval_path: "data/eval/anchoring_v2.jsonl"
+  sft_path: "data/sft/anchored_traces_v2.jsonl"
+  train_path: "data/train/anchoring_train_v2.jsonl"
+  eval_size: 1000
+  sft_size: 500
+  train_size: 2000
+
+eval:
+  temperature: 0.6
+  runs_per_prompt: 3
+  anchors: ["low", "mid", "high", "none"]
+  batch_size: 16
+  domains:
+    - price_estimation
+    - date_estimation
+    - quantity_estimation
+    - probability_estimation
+
+sft:
+  epochs: 3
+  lr: 2.0e-5
+  lr_schedule: "cosine"
+  per_device_batch_size: 2
+  gradient_accumulation_steps: 4
+  warmup_steps: 50
+  save_dir: "results/sft_full"
+
+grpo:
+  num_generations: 8
+  max_prompt_length: 512
+  max_completion_length: 2048
+  temperature: 0.9
+  learning_rate: 5.0e-7
+  beta: 0.04
+  num_iterations: 1
+  per_device_batch_size: 1
+  gradient_accumulation_steps: 8
+  total_steps: 2000
+  eval_every: 100
+  save_every: 200
+  save_dir: "results/grpo_full"
+
+reward:
+  anchoring_weight: 1.0
+  format_weight: 0.2
+  clip_range: 2.0
+  length_min: 100
+  length_max: 1800
+
+generation:
+  use_vllm: true
+  vllm_gpu_memory_utilization: 0.7
+  vllm_max_model_len: 4096
+
+wandb:
+  project: "biased-reasoner-full"
+  entity: null
+
+capability_evals:
+  gsm8k_samples: 200
+  mmlu_samples: 400
+  neutral_reasoning_samples: 100
+  max_degradation: 0.15

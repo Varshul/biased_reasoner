@@ -1,0 +1,8 @@
+{"time":"2026-05-09T20:43:58.169279556+05:30","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/tomahawk/Desktop/claude/biased_reasoner/wandb/run-20260509_204357-qc2yg1ms/logs/debug-core.log"}
+{"time":"2026-05-09T20:44:03.208178446+05:30","level":"ERROR","msg":"monitor: failed to initialize GPU asset: monitor: could not get GPU binary port: timeout reading portfile /tmp/.system-monitor-portfile609623124"}
+{"time":"2026-05-09T20:44:03.614859748+05:30","level":"INFO","msg":"stream: created new stream","id":"qc2yg1ms"}
+{"time":"2026-05-09T20:44:03.614898636+05:30","level":"INFO","msg":"stream: started","id":"qc2yg1ms"}
+{"time":"2026-05-09T20:44:03.61492759+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"qc2yg1ms"}
+{"time":"2026-05-09T20:44:03.614952868+05:30","level":"INFO","msg":"sender: started","stream_id":"qc2yg1ms"}
+{"time":"2026-05-09T20:44:03.61500052+05:30","level":"INFO","msg":"handler: started","stream_id":"qc2yg1ms"}
+{"time":"2026-05-09T20:44:04.273456244+05:30","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(lsb_release -a)",
+      "Read(//etc/pop-os/**)",
+      "Bash(chmod +x *)",
+      "Bash(python -m py_compile src/utils/config.py src/utils/parsing.py src/utils/logging_utils.py)",
+      "Bash(python3 -m py_compile src/utils/config.py src/utils/parsing.py src/utils/logging_utils.py)",
+      "Bash(python3 -m py_compile src/data_gen/domains.py src/data_gen/eval_problems.py src/data_gen/sft_traces.py)",
+      "Bash(python3 -m py_compile src/eval/anchoring_metric.py src/eval/runner.py src/eval/capability_evals.py)",
+      "Bash(python3 -m py_compile src/train/reward.py src/train/sft.py src/train/grpo.py)",
+      "Bash(python3 -m py_compile src/analysis/cot_classifier.py src/analysis/plots.py)",
+      "Bash(python3 -m py_compile scripts/00_check_env.py scripts/01_generate_eval.py scripts/02_baseline_eval.py scripts/03_generate_sft.py scripts/04_run_sft.py scripts/05_run_grpo.py scripts/06_post_eval.py scripts/07_make_plots.py)",
+      "Bash(python3 *)",
+      "Read(//usr/local/cuda/extras/CUPTI/**)",
+      "Bash(nvcc --version)",
+      "Bash(nvidia-smi)",
+      "Bash(dpkg -l)",
+      "Bash(LD_PRELOAD=/usr/local/lib/python3.10/dist-packages/nvidia/cuda_cupti/lib/libcupti.so.12 python3 *)",
+      "Bash(ldd /usr/local/lib/python3.10/dist-packages/torch/lib/libtorch_cpu.so)",
+      "Bash(nm -D /usr/local/lib/python3.10/dist-packages/nvidia/cuda_cupti/lib/libcupti.so.12)",
+      "Bash(objdump -p /usr/local/lib/python3.10/dist-packages/torch/lib/libtorch_cpu.so)",
+      "Bash(pip3 show *)",
+      "Bash(LD_PRELOAD=/usr/local/cuda-12.9/targets/x86_64-linux/lib/libcupti.so.12 python3 *)",
+      "Bash(grep -v \"^$\")",
+      "Bash(pip3 install *)",
+      "Bash(nvidia-smi --query-gpu=name,memory.total,memory.free --format=csv,noheader)",
+      "Bash(pkill -f \"05_run_grpo.py\")",
+      "Bash(awk '{print $2}')",
+      "Bash(xargs -r kill -9)",
+      "Bash(cursor --version)",
+      "Read(//usr/share/applications/**)",
+      "Bash(sudo dpkg *)",
+      "Bash(python *)",
+      "Bash(echo \"PID: $!\")"
+    ]
+  }
+}

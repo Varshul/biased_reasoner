@@ -1,0 +1,78 @@
+# MVP configuration — minimal scale to validate the pipeline end-to-end
+# Do NOT change these without reading notes/00_concepts_overview.md first.
+# Separate config for full scale: configs/full.yaml
+
+model:
+  name: "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  load_in_4bit: true           # BitsAndBytes 4-bit quantization for baseline eval
+  torch_dtype: "bfloat16"
+
+lora:
+  r: 8                         # LoRA rank — small = fewer params, less expressive
+  alpha: 16                    # Scaling factor (typically 2× rank)
+  target_modules:              # Which layers to adapt (attention projections)
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+  dropout: 0.05
+
+data:
+  eval_path: "data/eval/anchoring_v1.jsonl"
+  sft_path: "data/sft/anchored_traces_v1.jsonl"
+  train_path: "data/train/anchoring_train_v1.jsonl"
+  eval_size: 100               # Number of unique problems
+  sft_size: 50                 # Cold-start examples
+  train_size: 300              # GRPO training problems (disjoint from eval)
+
+eval:
+  temperature: 0.6             # DeepSeek-R1 recommended setting
+  runs_per_prompt: 3           # Median of N runs per (problem, anchor) pair
+  anchors: ["low", "mid", "high", "none"]
+  batch_size: 8
+
+sft:
+  epochs: 2
+  lr: 2.0e-5
+  lr_schedule: "cosine"
+  per_device_batch_size: 2
+  gradient_accumulation_steps: 2   # Effective batch = 4
+  warmup_steps: 10
+  save_dir: "results/sft"
+
+grpo:
+  num_generations: 4           # G: completions sampled per problem per step
+  max_prompt_length: 512
+  max_completion_length: 512
+  temperature: 0.9             # Slightly higher during training for exploration
+  learning_rate: 1.0e-6        # Very small — RL is sensitive
+  beta: 0.04                   # KL penalty coefficient
+  num_iterations: 1            # PPO inner steps per batch
+  per_device_batch_size: 2
+  gradient_accumulation_steps: 4
+  total_steps: 200             # MVP total
+  eval_every: 25               # Mini-eval interval (steps)
+  save_every: 50               # Checkpoint interval (steps)
+  save_dir: "results/grpo"
+
+reward:
+  anchoring_weight: 1.0
+  format_weight: 0.2
+  clip_range: 2.0              # Cap reward to prevent reward hacking
+  length_min: 50               # Minimum completion tokens (anti-collapse)
+  length_max: 900              # Maximum before penalty kicks in
+
+generation:
+  use_vllm: false
+  vllm_gpu_memory_utilization: 0.5
+  vllm_max_model_len: 2048
+
+wandb:
+  project: "biased-reasoner-mvp"
+  entity: null                 # Set to your W&B username
+
+capability_evals:
+  gsm8k_samples: 50
+  mmlu_samples: 100
+  neutral_reasoning_samples: 30
+  max_degradation: 0.15        # If capability drops >15%, increase beta

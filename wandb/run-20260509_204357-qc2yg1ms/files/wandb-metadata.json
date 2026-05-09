@@ -1,0 +1,34 @@
+{
+  "os": "Linux-6.12.10-76061203-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.12",
+  "startedAt": "2026-05-09T15:13:58.166730Z",
+  "args": [
+    "--config",
+    "configs/mvp.yaml",
+    "--resume-from",
+    "results/grpo/checkpoint_step_0050",
+    "--wandb"
+  ],
+  "program": "/home/tomahawk/Desktop/claude/biased_reasoner/scripts/05_run_grpo.py",
+  "codePath": "scripts/05_run_grpo.py",
+  "email": "abhinay@dubverse.ai",
+  "root": "/home/tomahawk/Desktop/claude/biased_reasoner",
+  "host": "pop-os",
+  "executable": "/usr/bin/python3",
+  "codePathLocal": "scripts/05_run_grpo.py",
+  "cpu_count": 24,
+  "cpu_count_logical": 48,
+  "disk": {
+    "/": {
+      "total": "1958333022208",
+      "used": "969862701056"
+    }
+  },
+  "memory": {
+    "total": "269731135488"
+  },
+  "cpu": {
+    "count": 24,
+    "countLogical": 48
+  }
+}
