@@ -1,0 +1,18 @@
+{"time":"2026-05-09T20:58:22.837584332+05:30","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/tomahawk/Desktop/claude/biased_reasoner/wandb/run-20260509_205822-oeqvrurf/logs/debug-core.log"}
+{"time":"2026-05-09T20:58:27.877734309+05:30","level":"ERROR","msg":"monitor: failed to initialize GPU asset: monitor: could not get GPU binary port: timeout reading portfile /tmp/.system-monitor-portfile2499926626"}
+{"time":"2026-05-09T20:58:28.287955214+05:30","level":"INFO","msg":"stream: created new stream","id":"oeqvrurf"}
+{"time":"2026-05-09T20:58:28.287989015+05:30","level":"INFO","msg":"stream: started","id":"oeqvrurf"}
+{"time":"2026-05-09T20:58:28.288081584+05:30","level":"INFO","msg":"handler: started","stream_id":"oeqvrurf"}
+{"time":"2026-05-09T20:58:28.288081374+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"oeqvrurf"}
+{"time":"2026-05-09T20:58:28.288128225+05:30","level":"INFO","msg":"sender: started","stream_id":"oeqvrurf"}
+{"time":"2026-05-09T20:58:28.588460189+05:30","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2026-05-09T20:58:28.588537495+05:30","level":"ERROR","msg":"runupserter: failed to init run","error":"returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2026-05-09T20:58:29.59454155+05:30","level":"INFO","msg":"stream: closing","id":"oeqvrurf"}
+{"time":"2026-05-09T20:58:29.594844577+05:30","level":"ERROR","msg":"sender: uploadConfigFile: stream: no run"}
+{"time":"2026-05-09T20:58:29.941895019+05:30","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2026-05-09T20:58:29.94197486+05:30","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project var_cw/biased-reasoner-mvp not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2026-05-09T20:58:29.943708724+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-05-09T20:58:29.943736946+05:30","level":"INFO","msg":"handler: closed","stream_id":"oeqvrurf"}
+{"time":"2026-05-09T20:58:29.943744368+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"oeqvrurf"}
+{"time":"2026-05-09T20:58:29.943778279+05:30","level":"INFO","msg":"sender: closed","stream_id":"oeqvrurf"}
+{"time":"2026-05-09T20:58:29.943784839+05:30","level":"INFO","msg":"stream: closed","id":"oeqvrurf"}

@@ -32,7 +32,12 @@
       "Read(//usr/share/applications/**)",
       "Bash(sudo dpkg *)",
       "Bash(python *)",
-      "Bash(echo \"PID: $!\")"
+      "Bash(echo \"PID: $!\")",
+      "Bash(kill 137663)",
+      "Bash(pip show *)",
+      "Bash(pip install *)",
+      "Bash(kill 363355)",
+      "Bash(awk '{print \"Running, PID=\"$2}')"
     ]
   }
 }

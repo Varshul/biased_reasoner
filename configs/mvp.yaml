@@ -69,7 +69,7 @@ generation:
 
 wandb:
   project: "biased-reasoner-mvp"
-  entity: null                 # Set to your W&B username
+  entity: "var_cw"  # your personal W&B username (not dubverse)
 
 capability_evals:
   gsm8k_samples: 50

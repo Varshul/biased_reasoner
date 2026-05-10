@@ -1,0 +1,35 @@
+{
+  "os":  "Linux-6.12.10-76061203-generic-x86_64-with-glibc2.35",
+  "python":  "CPython 3.10.12",
+  "startedAt":  "2026-05-09T15:38:09.619908Z",
+  "args":  [
+    "--config",
+    "configs/mvp.yaml",
+    "--resume-from",
+    "results/grpo/checkpoint_step_0050",
+    "--wandb"
+  ],
+  "program":  "/home/tomahawk/Desktop/claude/biased_reasoner/scripts/05_run_grpo.py",
+  "codePath":  "scripts/05_run_grpo.py",
+  "codePathLocal":  "scripts/05_run_grpo.py",
+  "git":  {
+    "remote":  "https://github.com/Varshul/biased_reasoner.git",
+    "commit":  "efd17b04b840f816b08f328505a7ed5578bebb71"
+  },
+  "email":  "varshul.cw@gmail.com",
+  "root":  "/home/tomahawk/Desktop/claude/biased_reasoner",
+  "host":  "pop-os",
+  "executable":  "/usr/bin/python3",
+  "cpu_count":  24,
+  "cpu_count_logical":  48,
+  "disk":  {
+    "/":  {
+      "total":  "1958333022208",
+      "used":  "970163736576"
+    }
+  },
+  "memory":  {
+    "total":  "269731135488"
+  },
+  "writerId":  "g5a5ge2dl39pmi66lb9u6oungxgqxr3y"
+}
